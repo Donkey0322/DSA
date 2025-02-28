@@ -1,0 +1,13 @@
+{
+  "files.associations": {
+    "assert.h": "c",
+    "stdio.h": "c",
+    "string.h": "c",
+    "MAIN.C": "cpp",
+    "8.h": "c"
+  },
+  "C_Cpp.clang_format_fallbackStyle": "Visual Studio",
+  "C_Cpp.clang_format_style": "file",
+  "editor.defaultFormatter": "ms-vscode.cpptools",
+  "editor.formatOnSave": true
+}
