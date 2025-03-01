@@ -10,5 +10,8 @@
   "C_Cpp.clang_format_fallbackStyle": "Visual Studio",
   "C_Cpp.clang_format_style": "file",
   "editor.defaultFormatter": "ms-vscode.cpptools",
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

@@ -1,0 +1,32 @@
+name: C CI
+
+on:
+  push:
+    paths:
+      - "HW0/**" # 監聽 HW0 目錄內的變化
+  pull_request:
+    paths:
+      - "HW0/**"
+
+jobs:
+  make-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y make gcc libcriterion-dev
+
+      - name: Run Make and Test for Each Homework Folder
+        run: |
+          for folder in HW0/*/; do
+            if [[ -f "$folder/Makefile" ]]; then
+              echo "Processing $folder"
+              make -C "$folder"
+              make -C "$folder" test
+            fi
+          done

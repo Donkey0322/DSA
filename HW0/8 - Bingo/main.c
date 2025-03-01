@@ -12,7 +12,6 @@ int main()
 
     while (scanf("%d %d", &n, &m) == 2)
     {
-        // Player A[MAC_PLAY_COUNT] = {0};
         for (int i = 0; i < n; i++)
         {
             scanf("%s", A[i].name);
