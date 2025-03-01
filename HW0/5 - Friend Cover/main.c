@@ -7,8 +7,6 @@
 int main()
 {
     int n, m;
-    Friends A[200] = {0};
-
     while (scanf("%d", &n) == 1)
     {
         Friends A[100] = {0};

@@ -19,7 +19,6 @@ int main()
     int n, q;
     int i;
     char answer[660] = {0};
-    Food A[100] = {0};
 
     while (scanf("%d", &n) == 1)
     {

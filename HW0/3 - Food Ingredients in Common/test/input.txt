@@ -1,0 +1,7 @@
+3
+cake 4 butter egg flour sugar
+omelet 4 bacon butter egg ham
+bread 1 flour
+2
+cake omelet
+omelet bread

@@ -9,7 +9,7 @@
 int main()
 {
     int N[MINE_NUM][MINE_NUM] = {0};
-    int M[MINE_NUM][MINE_NUM] = {-1};
+    int M[MINE_NUM][MINE_NUM];
     Mine A[MINE_NUM][MINE_NUM];
 
     int update = 1;
@@ -75,8 +75,6 @@ int main()
         {
             for (int j = 0; j < MINE_NUM; j++)
             {
-                int debug = 0;
-
                 int bomb = 0;
                 int undefine = 0;
 
@@ -114,7 +112,6 @@ int main()
                             int uy = A[i][j].undefines[u][1];
                             M[ux][uy] = 0;
                             update = 1;
-                            debug = 1;
                         }
                     }
                     else if (N[i][j] - bomb == undefine)
@@ -125,7 +122,6 @@ int main()
                             int uy = A[i][j].undefines[u][1];
                             M[ux][uy] = 1;
                             update = 1;
-                            debug = 1;
                         }
                     }
                 }

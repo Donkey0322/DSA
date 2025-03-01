@@ -8,7 +8,6 @@
 int main()
 {
     int n, m;
-    char *name;
     Player A[10];
 
     while (scanf("%d %d", &n, &m) == 2)

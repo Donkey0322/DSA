@@ -87,7 +87,7 @@ void bingo(Player *players, int n, int m)
             }
         }
     }
-    printf("%d ", win);
+    printf("%d", win);
     for (int i = 0; i < winner; i++)
     {
         printf(" %s", winners[i]);
