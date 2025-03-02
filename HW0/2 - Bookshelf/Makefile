@@ -1,4 +1,4 @@
 TARGET = 2
-SRCS = 2.c main.c
+SRCS = 2.c
 
 include ../../common.mk

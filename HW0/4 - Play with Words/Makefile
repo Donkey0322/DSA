@@ -1,4 +1,4 @@
 TARGET = 4
-SRCS = 4.c main.c
+SRCS = 4.c
 
 include ../../common.mk
